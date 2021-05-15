@@ -1,13 +1,15 @@
 import React from 'react';
-import SearchResultsCss from './SearchResults.css';
-import TrackList from './../tracklist/tracklist.js';
+import './SearchResults';
+import Tracklist from './../TrackList/Tracklist.js';
 
 class SearchResults extends React.Component {
     render() {
-        <div className="SearchResults">
-            <h2>Results</h2>
-            <TrackList />
-        </div>
+        return (
+            <div className="SearchResults">
+                <h2>Results</h2>
+                <Tracklist />
+            </div>
+        )
     }
 }
 
