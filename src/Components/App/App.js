@@ -25,7 +25,6 @@ class App extends React.Component {
     if (tracks.find(savedTrack => savedTrack.id === track.id)) {
       return;
     }
-
     tracks.push(track);
     this.setState({playlistTracks: tracks});
   }
@@ -46,7 +45,7 @@ class App extends React.Component {
         playlistNmae: "New Playlist",
         playlistTracks: []
       })
-    })
+    }).catch(e => console.log(e))
   }
 
   search(term) {
